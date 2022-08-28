@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { Home } from '@/pages/home';
+import { Home, Citizens } from '@/pages';
 import PrivateRoute from './PrivateRoutes';
 
 interface PageI {
@@ -15,6 +15,11 @@ function RoutesConfig() {
       name: 'home',
       path: '/',
       element: <Home />
+    },
+    {
+      name: 'Citizens',
+      path: '/citizens',
+      element: <Citizens />
     },
     {
       name: 'page-not-found',

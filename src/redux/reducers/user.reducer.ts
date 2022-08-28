@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { emptyUser, User } from '@/models/user.type'
+import { emptyUser, User } from '@/models/user.type';
 
 export const userSlice = createSlice({
   name: 'healt',
@@ -9,10 +9,10 @@ export const userSlice = createSlice({
       return action.payload;
     },
     modifyUser: (state, action) => {
-      return { ...state, ...action.payload }
+      return { ...state, ...action.payload };
     },
     resetUser: () => {
-      return emptyUser
+      return emptyUser;
     }
   }
 });

@@ -1,16 +1,16 @@
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from '@/routes/AppRouter';
-import './App.css'
+import { Layout } from '@/organisms';
+import './App.css';
 
 function App() {
-
   return (
-    <div>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Layout>
         <AppRouter />
-      </BrowserRouter>
-    </div>
-  )
+      </Layout>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

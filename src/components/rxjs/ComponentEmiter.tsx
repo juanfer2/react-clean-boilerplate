@@ -1,5 +1,5 @@
 import React from 'react';
-import { sharingInformationService } from '@/services/sharing-information.service'
+import { sharingInformationService } from '@/services/sharing-information.service';
 
 function ComponentEmiter() {
   const handleClick = () => {
@@ -15,7 +15,7 @@ function ComponentEmiter() {
       <button onClick={handleClick}>Enviar information</button>
       <button onClick={handleClickNo}>NO Enviar information</button>
     </div>
-  )
+  );
 }
 
-export default ComponentEmiter
+export default ComponentEmiter;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import { sharingInformationService } from '@/services/sharing-information.service';
 
 function ComponentSubscription() {
@@ -6,14 +6,12 @@ function ComponentSubscription() {
   const subscription$ = sharingInformationService.getSubject();
 
   useEffect(() => {
-    subscription$.subscribe((data: boolean) => {
-      if (!!data) setCount(count + 1);
+    subscription$.subscribe((data: any) => {
+      if (data) setCount(count + 1);
     });
-  }); 
+  });
 
-  return (
-    <div>{count}</div>
-  )
+  return <div>{count}</div>;
 }
 
-export default ComponentSubscription
+export default ComponentSubscription;

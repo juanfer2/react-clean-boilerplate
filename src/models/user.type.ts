@@ -6,4 +6,4 @@ export interface User {
 export const emptyUser = {
   id: 0,
   name: ''
-}
+};
